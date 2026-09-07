@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>安全哨兵 Triggr · 技术支持</title>
+  <title>安全哨兵 Triggr · 技术支持 / Support</title>
   <style>
     body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; line-height: 1.7; color: #1a1a1a; }
     h1 { font-size: 1.6rem; border-bottom: 2px solid #f0a020; padding-bottom: 8px; }
@@ -11,31 +11,80 @@
     a { color: #d97706; }
     .card { background: #fafafa; border: 1px solid #eee; border-radius: 10px; padding: 16px 20px; margin-top: 12px; }
     footer { margin-top: 40px; color: #888; font-size: 0.85rem; }
+    .tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+    .tab { padding: 8px 18px; border: 1px solid #ddd; border-radius: 20px; background: #fff; cursor: pointer; font-size: 0.9rem; }
+    .tab.active { background: #f0a020; color: #fff; border-color: #f0a020; }
+    .lang { display: none; }
+    .lang.active { display: block; }
   </style>
 </head>
 <body>
-  <h1>安全哨兵 Triggr · 技术支持</h1>
-  <p>感谢使用安全哨兵（Triggr）。如果你在使用过程中遇到任何问题，请通过以下方式联系我们，我们会在 1-2 个工作日内回复。</p>
-
-  <h2>常见问题（FAQ）</h2>
-  <div class="card">
-    <p><strong>Q：为什么后台收不到围栏提醒？</strong><br>
-    A：请确认已在系统设置中授予"始终允许"定位权限，并关闭对 Triggr 的省电限制；iOS 上请勿手动上滑关闭 App，让系统管理其生命周期。</p>
-    <p><strong>Q：如何恢复已购买的订阅？</strong><br>
-    A：打开 设置 → 订阅 → 点击"恢复购买"；如仍无法恢复，请联系我们。</p>
-    <p><strong>Q：如何取消订阅？</strong><br>
-    A：在 iPhone 的「设置 → Apple 账户 → 订阅」中取消，或前往 App Store 订阅管理页面操作。</p>
-    <p><strong>Q：数据存在哪里？会上传吗？</strong><br>
-    A：所有数据（场景、事件、录音）均保存在设备本地，无服务器、不上传、不追踪。</p>
+  <div class="tabs">
+    <button class="tab active" data-lang="zh">中文</button>
+    <button class="tab" data-lang="en">English</button>
   </div>
 
-  <h2>联系我们</h2>
-  <div class="card">
-    <p>📧 邮箱：<a href="mailto:kitterive@qq.com">kitterive@qq.com</a></p>
-    <p>🐛 问题反馈：<a href="https://github.com/guoxiujiang1971/triggr/issues">GitHub Issues</a></p>
-    <p>🔒 隐私政策：<a href="https://github.com/guoxiujiang1971/triggr/blob/main/privacy-policy.md">查看隐私政策</a></p>
-  </div>
+  <!-- ── 中文 ─────────────────────────────────────────── -->
+  <section class="lang active" id="zh">
+    <h1>安全哨兵 Triggr · 技术支持</h1>
+    <p>感谢使用安全哨兵（Triggr）。如果你在使用过程中遇到任何问题，请通过以下方式联系我们，我们会在 1-2 个工作日内回复。</p>
 
-  <footer>© 2026 安全哨兵 Triggr · 版本 1.0.0</footer>
+    <h2>常见问题（FAQ）</h2>
+    <div class="card">
+      <p><strong>Q：为什么后台收不到围栏提醒？</strong><br>
+      A：请确认已在系统设置中授予"始终允许"定位权限，并关闭对 Triggr 的省电限制；iOS 上请勿手动上滑关闭 App，让系统管理其生命周期。</p>
+      <p><strong>Q：如何恢复已购买的订阅？</strong><br>
+      A：打开 设置 → 订阅 → 点击"恢复购买"；如仍无法恢复，请联系我们。</p>
+      <p><strong>Q：如何取消订阅？</strong><br>
+      A：在 iPhone 的「设置 → Apple 账户 → 订阅」中取消，或前往 App Store 订阅管理页面操作。</p>
+      <p><strong>Q：数据存在哪里？会上传吗？</strong><br>
+      A：所有数据（场景、事件、录音）均保存在设备本地，无服务器、不上传、不追踪。</p>
+    </div>
+
+    <h2>联系我们</h2>
+    <div class="card">
+      <p>📧 邮箱：<a href="mailto:kitterive@qq.com">kitterive@qq.com</a></p>
+      <p>🐛 问题反馈：<a href="https://github.com/guoxiujiang1971/triggr/issues">GitHub Issues</a></p>
+      <p>🔒 隐私政策：<a href="https://github.com/guoxiujiang1971/triggr/blob/main/privacy-policy.md">查看隐私政策</a></p>
+    </div>
+  </section>
+
+  <!-- ── English ──────────────────────────────────────── -->
+  <section class="lang" id="en">
+    <h1>Triggr · Support</h1>
+    <p>Thank you for using Triggr. If you encounter any issues, please reach out through the channels below. We usually respond within 1-2 business days.</p>
+
+    <h2>FAQ</h2>
+    <div class="card">
+      <p><strong>Q: Why don't I receive geofence alerts in the background?</strong><br>
+      A: Make sure location access is set to "Always" and that Triggr isn't battery-restricted. On iOS, don't swipe the app away manually — let the system manage its lifecycle.</p>
+      <p><strong>Q: How do I restore a purchase?</strong><br>
+      A: Go to Settings → Subscription → tap "Restore Purchases". If it still fails, please contact us.</p>
+      <p><strong>Q: How do I cancel my subscription?</strong><br>
+      A: Cancel in iPhone Settings → Apple Account → Subscriptions, or in the App Store subscription management page.</p>
+      <p><strong>Q: Where is my data stored? Is it uploaded?</strong><br>
+      A: All data (scenarios, events, recordings) stays on your device. No servers, no uploads, no tracking.</p>
+    </div>
+
+    <h2>Contact Us</h2>
+    <div class="card">
+      <p>📧 Email: <a href="mailto:kitterive@qq.com">kitterive@qq.com</a></p>
+      <p>🐛 Bug reports: <a href="https://github.com/guoxiujiang1971/triggr/issues">GitHub Issues</a></p>
+      <p>🔒 Privacy Policy: <a href="https://github.com/guoxiujiang1971/triggr/blob/main/privacy-policy.md">View Privacy Policy</a></p>
+    </div>
+  </section>
+
+  <footer>© 2026 安全哨兵 Triggr · Version 1.0.0</footer>
+
+  <script>
+    document.querySelectorAll('.tab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('.tab').forEach(function (t) { t.classList.remove('active'); });
+        document.querySelectorAll('.lang').forEach(function (s) { s.classList.remove('active'); });
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.lang).classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
